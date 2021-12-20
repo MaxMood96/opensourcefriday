@@ -5,21 +5,21 @@ ruby File.read(
 ).strip
 
 # Include https://github.com/heartcombo/devise/pull/5327 for OmniAuth 2
-gem "devise"
-gem "devise-i18n"
+gem "devise", ">= 4.8.0"
+gem "devise-i18n", ">= 1.10.0"
 gem "faraday-http-cache"
 gem "figaro"
-gem "jquery-rails"
-gem "octicons_helper"
+gem "jquery-rails", ">= 4.4.0"
+gem "octicons_helper", ">= 15.2.0"
 gem "octokit"
 gem "omniauth-github"
-gem "omniauth-rails_csrf_protection"
+gem "omniauth-rails_csrf_protection", ">= 1.0.0"
 gem "pg"
 gem "puma"
 gem "rack-host-redirect"
-gem "rails"
+gem "rails", ">= 6.1.4.1"
 gem "rtl"
-gem "sassc-rails"
+gem "sassc-rails", ">= 2.1.2"
 gem "sitemap_generator"
 gem "turbolinks"
 gem "uglifier"
@@ -35,7 +35,7 @@ group :development do
   gem "rubocop-rails"
   gem "spring"
   gem "spring-watcher-listen"
-  gem "web-console"
+  gem "web-console", ">= 4.1.0"
 end
 
 group :production do
