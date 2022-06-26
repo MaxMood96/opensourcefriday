@@ -340,7 +340,7 @@ DEPENDENCIES
   puma
   rack-cache
   rack-host-redirect
-  rails (~> 7.0)
+  rails (~> 7.0, >= 7.0.2.3)
   rtl
   rubocop
   rubocop-performance
