@@ -76,7 +76,7 @@ GEM
     concurrent-ruby (1.1.10)
     connection_pool (2.2.5)
     crass (1.0.6)
-    dalli (3.2.1)
+    dalli (3.2.3)
     devise (4.8.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -323,7 +323,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   connection_pool
-  dalli
+  dalli (>= 3.2.3)
   devise
   devise-i18n
   faraday-http-cache
