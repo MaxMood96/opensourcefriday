@@ -39,7 +39,7 @@ end
 
 group :production do
   gem "connection_pool"
-  gem "dalli"
+  gem "dalli", ">= 3.2.3"
   gem "kgio"
   gem "memcachier"
   gem "rack-cache"
