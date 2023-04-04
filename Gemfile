@@ -17,7 +17,7 @@ gem "omniauth-rails_csrf_protection"
 gem "pg"
 gem "puma"
 gem "rack-host-redirect"
-gem "rails", "~> 7.0"
+gem "rails", "~> 7.0", ">= 7.0.4.3"
 gem "rtl"
 gem "sassc-rails"
 gem "sitemap_generator"
@@ -39,7 +39,7 @@ end
 
 group :production do
   gem "connection_pool"
-  gem "dalli"
+  gem "dalli", ">= 3.2.3"
   gem "kgio"
   gem "memcachier"
   gem "rack-cache"
