@@ -42,7 +42,7 @@ group :production do
   gem "dalli"
   gem "kgio"
   gem "memcachier"
-  gem "rack-cache"
+  gem "rack-cache", ">= 1.14.0"
 end
 
 group :test do

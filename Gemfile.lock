@@ -199,8 +199,8 @@ GEM
     puma (5.6.4)
       nio4r (~> 2.0)
     racc (1.6.0)
-    rack (2.2.3)
-    rack-cache (1.13.0)
+    rack (2.2.7)
+    rack-cache (1.14.0)
       rack (>= 0.4)
     rack-host-redirect (1.3.0)
       rack
@@ -338,7 +338,7 @@ DEPENDENCIES
   omniauth-rails_csrf_protection
   pg
   puma
-  rack-cache
+  rack-cache (>= 1.14.0)
   rack-host-redirect
   rails (~> 7.0)
   rtl
@@ -355,7 +355,7 @@ DEPENDENCIES
   web-console
 
 RUBY VERSION
-   ruby 3.1.0p0
+   ruby 2.7.8p225
 
 BUNDLED WITH
    2.3.6
