@@ -34,7 +34,7 @@ group :development do
   gem "rubocop-performance"
   gem "rubocop-rails"
   gem "spring"
-  gem "web-console"
+  gem "web-console", ">= 4.2.1"
 end
 
 group :production do
