@@ -59,8 +59,8 @@ Rails.application.configure do # rubocop:disable Metrics/BlockLength
   # Use a memcached cache store in production.
   client = Dalli::Client.new \
     (ENV["MEMCACHIER_SERVERS"] || "").split(","),
-    username: ENV["MEMCACHIER_USERNAME"],
-    password: ENV["MEMCACHIER_PASSWORD"],
+    username: ENV.fetch("MEMCACHIER_USERNAME", nil),
+    password: ENV.fetch("MEMCACHIER_PASSWORD", nil),
     failover: true,
     socket_timeout: 1.5,
     socket_failure_delay: 0.2,
@@ -89,7 +89,7 @@ Rails.application.configure do # rubocop:disable Metrics/BlockLength
   config.active_support.deprecation = :notify
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
-  config.log_formatter = ::Logger::Formatter.new
+  config.log_formatter = Logger::Formatter.new
 
   # Use a different logger for distributed setups.
   # require 'syslog/logger'
