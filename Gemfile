@@ -30,7 +30,7 @@ end
 
 group :development do
   gem "listen"
-  gem "rubocop"
+  gem "rubocop", ">= 1.27.0"
   gem "rubocop-performance"
   gem "rubocop-rails"
   gem "spring"
