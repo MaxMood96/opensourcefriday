@@ -168,8 +168,8 @@ class UsersController < ApplicationController
         if current_user && !Rails.env.test?
           config.access_token = current_user.oauth_token
         else
-          config.client_id = ENV["github_client_id"]
-          config.client_secret = ENV["github_client_secret"]
+          config.client_id = ENV.fetch("github_client_id", nil)
+          config.client_secret = ENV.fetch("github_client_secret", nil)
         end
       end
       client
